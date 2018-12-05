@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>H5邀请函</title>
+        <link href="css/min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="container">
+            <h1>Let's Learn HTML5</h1>
+            <p>充满想象力和设计感的学习过程！发挥您的美感与想象力，探索Web开发的无限可能！</p>
+            <a href="invite.php" id="enroll">立即报名</a>
+        </div>        
+        <script type="text/javascript">
+            var enroll = document.getElementById("enroll");
+            enroll.onclick = function(e){
+                e.preventDefault();
+                enroll.innerHTML = "报名成功";
+                enroll.style.background = "#27cb8b";
+                enroll.style.borderColor = "#27cb8b";
+            }
+        </script>
+    </body>
+</html>
